@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title><?php echo $name; ?> | Hootpile</title>
+<title>Rahul Kapoor GitHub Blog</title>
 <meta charset="utf-8">
 <meta content="noodp,noydir" name="robots">
 <meta content="The latest Hoots from <?php echo $name; ?> (@<?php echo $username; ?>), student at VIT University. <?php echo $bio; ?>" name="description">
@@ -23,14 +23,6 @@
 <meta property="og:url" content="http://www.hootpile.com/<?php echo $username; ?>"/>
 <meta property="og:site_name" content="Hootpile"/>
 <meta property="og:see_also" content="http://www.hootpile.com"/>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-61341818-1', 'auto');
-  ga('send', 'pageview');
-</script>
 <link type="image/x-icon" rel="shortcut icon" href="http://www.hootpile.com/images/favicon.ico"/>
 <style type="text/css">
 html {
@@ -313,57 +305,31 @@ font-weight:normal;
 </style>
 </head>
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=442861082492923";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div id="featurebar" class="featurebar">
 <p class="featurebar__links">
-<span>Hootpile Beta</span>
-<?php
-session_start();
-if (!isset($_SESSION["user_login"])) {
-echo '<a class="fb_link" href="">Home</a>
-<a class="fb_link" href="https://docs.google.com/forms/d/1_KWStVBhPNeskXHdtzrdBn_b7nYF530V-zBiuhXow6o/viewform">Feedback</a>
-<a class="fb_link" href="/index.php">Log In</a>
-<a class="fb_link" href="/register">Register</a>';
-}
-else
-{
-echo '<a class="fb_link" href="/home.php">Home</a>
-<a class="fb_link" href="/editprofile">Edit Profile</a>
-<a class="fb_link" href="/Settings">Settings</a>
-<a class="fb_link" href="/logout.php">Logout</a>';
-}
-?>
+<span>Rahul Kapoor</span>
+<a class="fb_link" href="http://github.com/rahulkapoor90">View Projects</a>
+<a class="fb_link" href="mailto:rahulkapoorbbps@outlook.com">Hire Me</a>
+<a class="fb_link" href="http://facebook.com/rahulkapoor99">Facebook Profile</a>
+<a class="fb_link" href="http://twitter.com/rahulkapoor90">Twitter Profile</a>
+<a class="fb_link" href="http://rahulkapoor.me">Personal Website</a>
 </p>
 </div><br><br>
 	<div class="div_left">
 	<div id="about"> <!-- User profile -->
-	  <img src="<?php echo $profilepic_info ?>" width="200" height="200" alt="<?php echo $username;?>">
-	  <h2><?php echo $name; ?></h2>
-	  <p><?php echo $bio; ?></p>
+	  <img src="http://i.imgur.com/GaJNKpe.jpg" width="200" height="200" alt="Rahul Kapoor Profile Picture">
+	  <h2>Rahul Kapoor</h2>
+	  <p>Developer by Heart and gentle by mind.</p>
 	  <p>Student at VIT University.</p>
-                                   <div class="fb-share-button" data-href="http://www.hootpile.com/<?php echo $username; ?>" data-layout="button_count"></div>
-                                   <div class="fb-send" data-href="http://www.hootpile.com/<?php echo $username; ?>" data-colorscheme="light"></div>
+                                   <div class="fb-share-button" data-href="http://www.rahulkapoor90.github.io" data-layout="button_count"></div>
+                                   <div class="fb-send" data-href="http://www.rahulkapoor90.github.io" data-colorscheme="light"></div>
                               </div>
-	  
-	<?php
-if (!isset($_SESSION["user_login"])) {
-echo '
 <div class="SignupCallOut js-signup-call-out ">
 <div class="SignupCallOut-header">
 <h3 class="SignupCallOut-title u-textBreak">
 Are you from VIT University ? Sign Up Now.
 </h3>
-</div></div><br>';}
-else {
-echo '';
-}?>
+</div></div><br>
 <img src="http://i.imgur.com/JPMyxfL.png" width="300" style="margin-left:30px;" alt="VIT University SITE">
 <div style="background-color: #EEEEF1; width:300px; padding:20px 30px; margin-left:30px;">
 <p><img class="_51sw img" src="https://www.facebook.com/images/profile/timeline/app_icons/info_24.png" alt="SJT" title="SJT"> Story of <?php echo $name; ?></p><hr>
