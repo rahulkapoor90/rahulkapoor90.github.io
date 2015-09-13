@@ -327,10 +327,9 @@ font-weight:normal;
 <div class="SignupCallOut js-signup-call-out ">
 <div class="SignupCallOut-header">
 <h3 class="SignupCallOut-title u-textBreak">
-Are you from VIT University ? Sign Up Now.
+Are you from VIT University? Then,Add your profile to this <a href="https://gist.github.com/rahulkapoor90/1acba95b58a70ad9d4aa">list</a>.
 </h3>
 </div></div><br>
-<img src="http://i.imgur.com/JPMyxfL.png" width="300" style="margin-left:30px;" alt="VIT University SITE">
 <div style="background-color: #EEEEF1; width:300px; padding:20px 30px; margin-left:30px;">
 <p><img class="_51sw img" src="https://www.facebook.com/images/profile/timeline/app_icons/info_24.png" alt="SJT" title="SJT"> Story of <?php echo $name; ?></p><hr>
 <p style="font-weight:bold;">Tagline</p>
@@ -356,22 +355,7 @@ Are you from VIT University ? Sign Up Now.
 <a href="<?php echo $other; ?>"><?php echo $other; ?></a>
 </p>
 </div><br>
-<div style="background-color: #EEEEF1; width:300px; padding:20px 30px; margin-left:30px;">
-<p>Basic Information</p><hr>
-<p>Gender: <?php echo $gender; ?></p>
-<p>Birthday: <?php echo $birthday; ?></p>
-<p>Relationship: <?php echo $relation; ?></p>
-</div><br>
-<div style="background-color: #EEEEF1; width:300px; padding:20px 30px; margin-left:30px;">
-<p>Contact Information</p><hr>
-<p style="font-weight:bold;">Hostel Block & Room</p>
-<?php echo $block; ?>
-<p style="font-weight:bold;">Mobile No: </p>
-<?php echo $mobile; ?>
-<p style="font-weight:bold;">Home Address: </p>
-<?php echo $address; ?>
-</div><br><br>
-	</div>
+</div>
 
 <div class="div_right">
 <div style="background-color: #EEEEF1; width:550px; padding:20px 30px;">
@@ -394,72 +378,13 @@ Are you from VIT University ? Sign Up Now.
 <th><?php echo $brag; ?></th>
 </table>
 </div>
-<br><br>
-	<?php
-if (!isset($_SESSION["user_login"])) {
-echo '';}
-else {
-echo '<div id="updateboxarea">
-<p>Share on his/her Profile, talk to other VITians through this.</p>
-<form action="" method="post">
-<textarea id="update" name="post"></textarea>
-<div id="controlButtons">
-<span class="floatRight">
-<input id="update_button" class="update_button wallbutton update_box" type="submit" name="send" value=" Update "></input>
-</span>
-</div>
-</form>
-</div>';
-}?>
-	<?php
-//If the user is logged in
-$getposts = mysqli_query($conn,"SELECT * FROM posts WHERE user_posted_to='$username' ORDER BY id DESC LIMIT 10") or die(mysql_error());
-$posts = mysqli_num_rows($getposts);
-if($posts == 0){
-	echo "<article class='post'>
+<br>
+<article class='post'>
 	 <div class='post-content'>
 <div class='content'>
 <img src='http://www.hootpile.com/images/small.png' id='post_photo' alt=''></img>
 <a href='/$added_by'>@hootpile</a>
 <p>$username's News Feed is currently empty, other VITians haven't started interacting with you yet!<br>but you can start posting on your friends profile or learn more on my profile.</p>
 </div>
-</div></article><br>";
-}
-else {
-while ($row = mysqli_fetch_array($getposts,MYSQLI_ASSOC)) {
-						$id = $row['id'];
-						$body = $row['body'];	
-						$date_added = $row['date_added'];
-						$added_by = $row['added_by'];
-						$user_posted_to = $row['user_posted_to'];  
-						$get_user_info = mysqli_query($conn,"SELECT * FROM users WHERE username='$added_by'");
-                                                $get_info = mysqli_fetch_assoc($get_user_info);
-                                                $name = $get_info['name'];
-                                                 $get_user_info = mysqli_query($conn,"SELECT profile_pic FROM users2 WHERE username='$added_by'");
-                                                $get_info = mysqli_fetch_assoc($get_user_info);
-                                                $profilepic_info3 = $get_info['profile_pic'];
-                                                if ($profilepic_info3 == "") {
-                                                 $profilepic_info3 = "http://www.hootpile.com/images/default_hootpile.png";
-                                                }
-                                                else
-                                                {
-                                                 $profilepic_info3 = "http://www.hootpile.com/userdata/profile_pics/".$profilepic_info3;
-                                                }
-                                                $reg_exUrl = "/(http|https|ftp|ftps|www)\:\/\/[a-zA-Z0-9\-\.]+\.[a-zA-Z]{2,3}(\/\S*)?/";
-                                                if(preg_match($reg_exUrl, $body, $url)) {
-                                                $body = preg_replace($reg_exUrl, "<a href='{$url[0]}' id='post_link'>{$url[0]}</a> ", $body);
-                                                }
-	 echo "
-	 <article class='post'>
-	 <div class='post-content'>
-<div class='content'>
-<img src='$profilepic_info3' id='post_photo' alt='$username'>
-<a href='/$added_by'>@$added_by</a>
-<p>$body</p>
-</div>
-</div></article>
-	 ";
-	 }
-}
-?>
+</div></article><br>
 	</div>
