@@ -616,7 +616,7 @@ input[type="email"]:focus:valid {
   display: inline-flex;
   box-sizing: border-box;
 }
-#nav-link{
+#nav_link{
   text-decoration:none;
   font-size:20px;
   text-align:center;
