@@ -630,13 +630,11 @@ input[type="email"]:focus:valid {
   display:inline-block;
   margin:0;
 }
-/*
+
 .box-sm:hover{
       transform: scale(2);
     transition: transform 1s ease-out;
-    text-transform: lowercase;
 }
-*/
 
 .red{
   background-color:#FF5852;
