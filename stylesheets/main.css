@@ -20,8 +20,6 @@ textarea {
 }
 
 body {
-    background: url('http://thecodeplayer.com/u/m/b1.png') no-repeat center center fixed;
-  background-size: cover;
     font-size: .9em;
     line-height: 1.4;
     font-family: monospace;
