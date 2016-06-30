@@ -1,0 +1,42 @@
+
+.box{
+  width:1300px;
+  height:25px;
+  overflow:hidden;
+  display: inline-flex;
+}
+
+.box-sm{
+  min-width:200px;
+  min-height:25px;
+  height:20px;
+  display:inline-block;
+  margin:0;
+}
+
+.box-sm:hover{
+	  transform: scale(2);
+    transition: transform 1s ease-out;
+}
+
+.red{
+  background-color:#FF5852;
+}
+.orange{
+  background-color:#FF9000;
+}
+.yellow{
+  background-color:#FFD300;
+}
+
+.green{
+  background-color:#3DCD49;
+}
+
+.blue{
+  background-color:#0089D7;
+}
+
+.purple{
+  background-color:#9E44C4;
+}
