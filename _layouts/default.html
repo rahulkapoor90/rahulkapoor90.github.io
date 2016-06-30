@@ -2,10 +2,20 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
+			<meta name="description" content="">
+            <meta name="viewport" content="width=device-width">
+            <link rel="shortcut icon" href="/images/favicon.ico">
+            <link rel="stylesheet" href="/stylesheets/normalize.css">
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
+			<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 		</head>
 		<body>
+		<!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
 			  <div class="box">
     <a href="rahulkapoor.me"><div class="box-sm red">Home</div></a>
             <div class="box-sm orange"></div>
@@ -15,7 +25,7 @@
     <div class="box-sm purple"></div>
         </div>
 </div>
-			<div class="container">
+			<div id="container">
 			
 			{{ content }}
 			

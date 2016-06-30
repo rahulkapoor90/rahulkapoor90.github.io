@@ -1,4 +1,615 @@
 
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: .9em;
+    line-height: 1.4;
+    font-family: monospace;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #f8f8f8;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+#container {
+    float: center;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#main{
+    margin: 0 auto;
+    text-align: center;
+    float: center;
+    display: block;
+}
+
+#main h1 {
+    font-size: 250%;
+}
+
+#contact {
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    margin-top: 40px;
+    width: 500px;
+    display: block;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #595959;
+    opacity: .6;
+}
+
+#contact a:hover {
+    color: #595959;
+}
+
+#contact p {
+    color: #595959;
+    opacity: .7;
+}
+
+
+#status {
+    font-family: monospace;
+    color: #d1d1d1;
+    margin: 0 auto;
+    float: center;
+    text-align: center;
+    margin-top: 300px;
+
+}
+
+#projects {
+    font-family: monospace;
+    margin: 0 auto;
+    float: center;
+    color: #595959;
+    width: 300px;
+    text-align: center;
+    /*padding: 1em;*/
+    /*border: solid red;*/
+}
+
+ul {
+    display: block;
+    margin: 0 auto;
+    float: center;
+    width: 100%;
+    /*border: solid red;*/
+    text-align: center;
+}
+
+li {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#projects p {
+        text-decoration: center;
+        font-size: 115%;
+
+}
+
+#projects a{
+    text-decoration: underline;
+    color: #595959;
+}
+
+#projects a:hover{
+    color: black;
+    opacity: .3;
+}
+
+span {
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    margin:0 auto;
+    float: center;
+    text-align: left;
+    padding: 0;
+    margin: 0 ;
+    margin-top: 10px;
+
+}
+
+.emailbutton {
+    width: 250px;
+    display: block;
+    float: center;
+    text-align: center;
+    margin: 0 auto;
+    border: solid #595959;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact a:hover {
+    opacity: .6;
+}
+
+/*FORM EMAIL SIGN UP*/
+form {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    float: center;
+}
+
+input[type="submit"] {
+    border: none; 
+    background-color: #595959; 
+    color: white; 
+    text-transform: uppercase;
+    font-family: 'HelveticaNeue';
+    padding: .75em;
+    border-radius: .5em;
+    width: 20%;
+    margin-top: 15px;
+    opacity: .7;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: monospace;
+}
+
+
+
+input[type="email"] {
+    border:solid #595959 2px;
+    background-color: rgba(255,255,255, 0.3);
+    padding: .75em;
+    border-radius: .75em;
+    width: 250px;
+    color: #595959;
+    margin-right:2%;
+    display: inline-block;
+    font-family: monospace;
+    opacity: .7;
+}
+
+input[type="email"]:focus:invalid {
+    outline: none;
+    border: 1px solid #c0392b;
+    box-shadow: 0 0 5px #e74c3c;
+    transition: all .3s ease-in-out;
+
+}
+
+input[type="email"]:focus:valid {
+    outline: none;
+    border: 1px solid #595959;
+    opacity: .3;
+    box-shadow: 0 0 1px #fff;
+    transition: all .3s ease-in-out;
+
+}
+
+.notifyme {
+    float: center;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 100%;
+    padding-left: 60px;
+    margin-top: 10px;
+}
+
+.emailaddress {
+    margin-top: 45px;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+
+
+#container {
+    float: center;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#main{
+    margin: 0 auto;
+    text-align: center;
+    float: center;
+}
+
+#main h1 {
+    font-size: 150%;
+}
+
+#main img {
+    width: 100%;
+}
+
+#projects {
+    width: 90%;
+    margin: 0 auto;
+    float: center;
+    display: block;
+    font-size: 100%;
+    margin-top: 20px;
+    /*border: solid red;*/
+}
+
+#projects ul {
+    width: 100%;
+    /*margin-left: -25px ;*/
+    padding: 0;
+}
+
+#status {
+    width: 90%;
+    margin: 0 auto;
+    float: center;
+    margin-top: 30px;
+}
+
+#contact {
+    color: #f1f1f1;
+    text-align: center;
+    margin: 0 auto;
+    float: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+form {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    float: center;
+    margin-top: 25px;
+}
+
+input[type="submit"] {
+    border: none; 
+    background-color: #595959; 
+    color: white; 
+    text-transform: uppercase;
+    font-family: 'HelveticaNeue';
+    padding: .75em;
+    border-radius: .5em;
+    width: 75px;
+    margin-top: 15px;
+    opacity: .7;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-family: monospace;
+}
+
+
+
+input[type="email"] {
+    border:solid #595959 2px;
+    background-color: rgba(255,255,255, 0.3);
+    padding: .75em;
+    border-radius: .75em;
+    width: 175px;
+    color: #595959;
+    margin-right:2%;
+    display: inline-block;
+    font-family: monospace;
+    opacity: .7;
+    text-align: center;
+}
+
+input[type="email"]:focus:invalid {
+    outline: none;
+    border: 1px solid #c0392b;
+    box-shadow: 0 0 5px #e74c3c;
+    transition: all .3s ease-in-out;
+
+}
+
+input[type="email"]:focus:valid {
+    outline: none;
+    border: 1px solid #595959;
+    opacity: .3;
+    box-shadow: 0 0 1px #fff;
+    transition: all .3s ease-in-out;
+
+}
+
+.notifyme {
+    margin: 0 auto;
+    float: center;
+    display: block;
+    padding: 0px;
+    width: 90%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 85%;
+}
+
+.emailaddress {
+    margin-top: 20px;
+}
+
+    /* Style adjustments for viewports that meet the condition */
+}
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
 .box{
   width:1300px;
   height:25px;
