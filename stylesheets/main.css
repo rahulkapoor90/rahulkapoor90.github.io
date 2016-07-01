@@ -657,3 +657,6 @@ input[type="email"]:focus:valid {
 .purple{
   background-color:#9E44C4;
 }
+#social {
+    margin-right: 5px;
+}
