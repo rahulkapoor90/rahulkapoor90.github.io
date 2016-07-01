@@ -100,7 +100,7 @@ textarea {
 #container {
     float: center;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #main{
@@ -658,5 +658,5 @@ input[type="email"]:focus:valid {
   background-color:#9E44C4;
 }
 #social {
-    margin-right: 10px;
+    margin-right: 14px;
 }
