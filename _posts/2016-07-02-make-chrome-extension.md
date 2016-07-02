@@ -22,8 +22,7 @@ In this case i am considering a simple webpage which looks exactly like it is sh
 
 The source code for the webpage that concerns us is:
 
-<pre>
-<code>	
+```
 <table height="30" width="750" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
 	<td valign="top" width="10" bgcolor=#FFFFFF>
@@ -55,9 +54,8 @@ The source code for the webpage that concerns us is:
 	</td>
   </tr>
 </table>
-</pre>
-</code>
 
+```
 #### Here we want to change the whole form with the name="facprofile" as an example so let's begin.
 
 ### First Select the form and store it in a variable.
@@ -72,13 +70,11 @@ In order to change the design of a webpage we are concerned only with document.c
 
 So, First create a 'from' element and add it's attribute but here if you want to add your own style in css or sass you can add it by adding a setAttribute id or class.
 
-<pre>
-<code>
+
 var form = document.createElement("form");
 form.setAttribute("name","facprofile");
 form.setAttribute("class","form-wrapper cf");
-</code>
-</pre>
+
 
 Finally, add the other div's or table that are needed for example:
 
