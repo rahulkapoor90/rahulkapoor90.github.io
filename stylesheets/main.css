@@ -159,7 +159,16 @@ textarea {
     /*padding: 1em;*/
     /*border: solid red;*/
 }
-
+.posts {
+    font-family: monospace;
+    margin: 0 auto;
+    float: center;
+    color: #595959;
+    width: 70%;
+    text-align: center;
+    /*padding: 1em;*/
+    /*border: solid red;*/
+}
 ul {
     display: block;
     margin: 0 auto;
@@ -186,6 +195,21 @@ li {
 }
 
 #projects a:hover{
+    color: black;
+    opacity: .3;
+}
+.posts p {
+        text-decoration: center;
+        font-size: 115%;
+
+}
+
+.posts a{
+    text-decoration: underline;
+    color: #595959;
+}
+
+.posts a:hover{
     color: black;
     opacity: .3;
 }
@@ -434,6 +458,22 @@ input[type="email"]:focus:valid {
 }
 
 #projects ul {
+    width: 100%;
+    /*margin-left: -25px ;*/
+    padding: 0;
+}
+
+.posts {
+    width: 90%;
+    margin: 0 auto;
+    float: center;
+    display: block;
+    font-size: 100%;
+    margin-top: 20px;
+    /*border: solid red;*/
+}
+
+.posts ul {
     width: 100%;
     /*margin-left: -25px ;*/
     padding: 0;
