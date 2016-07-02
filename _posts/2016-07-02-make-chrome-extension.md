@@ -29,7 +29,8 @@ The source code for the webpage that concerns us is:
 		&nbsp;
 	</td>
 	<td valign="top" width="740" bgcolor=#FFFFFF align="center">
-	
+<pre>
+<code>	
 	<center>
 	<font size=2><b><u>FACULTY PROFILE</u></b></font>
 	</center>
@@ -55,8 +56,8 @@ The source code for the webpage that concerns us is:
 	</td>
   </tr>
 </table>
-
-```
+</pre>
+</code>
 
 
 
